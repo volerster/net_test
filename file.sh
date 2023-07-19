@@ -5,7 +5,7 @@ a=$1
 
 #цикл
 for filename in $a
- do 
+ do
     ext=${filename##*\.}
     case "$ext" in 
     png) echo "$a : image"
@@ -21,5 +21,7 @@ for filename in $a
     doc) echo "$a : doc"
     ;;
     *) echo "Unknown file"
+
 esac
+
 done
